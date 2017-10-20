@@ -13,11 +13,17 @@ class Graphics {
     this.ctx.strokeStyle = color
     this.ctx.lineWidth = thickness
     this.ctx.lineCap = linecap
-    
+
     this.ctx.beginPath()
     this.ctx.moveTo(startx, starty)
     this.ctx.lineTo(endx, endy)
     this.ctx.stroke()
   }
+
+  fillRect(x, y, width, height, color = '#000000') {
+    this.ctx.fillStyle = color
+    this.ctx.fillRect(x, y, width, height)
+    this.ctx.fill()
+  } 
 
 }
