@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script src="../src/graphics.js"></script>
+  <script>
+    const canvas = document.getElementById('canvas')
+    const context = canvas.getContext('2d')
+    canvas.width = 800
+    canvas.height = canvas.width / 16 * 9
+
+    const gfx = new Graphics(context)
+
+    gfx.clear('#10ffbb')
+    gfx.line(20, 20, 500, 20, null, 20, 'round')
+  
+  </script>
+</body>
+</html>
