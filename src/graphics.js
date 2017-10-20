@@ -72,4 +72,13 @@ class Graphics {
     this.reset()
   }
 
+  text(x, y, text, color = '#000000', font = '') {
+    this.ctx.fillStyle = color
+    this.ctx.font = font
+
+    this.ctx.fillText(text, x, y)
+
+    this.reset()
+  }
+
 }
